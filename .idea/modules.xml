@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RecuperacionProyecto-master.iml" filepath="$PROJECT_DIR$/RecuperacionProyecto-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/joda-time-2.4/joda-time-2.4.iml" filepath="$PROJECT_DIR$/joda-time-2.4/joda-time-2.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/joda-time-2.4-sources/joda-time-2.4-sources.iml" filepath="$PROJECT_DIR$/joda-time-2.4-sources/joda-time-2.4-sources.iml" />
+    </modules>
+  </component>
+</project>

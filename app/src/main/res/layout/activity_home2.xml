@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:itemBackground="@color/colorNavBar"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:menu="@menu/bottom_navigation_main"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="513dp" />
+
+    <TextView
+        android:id="@+id/tvindica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="20"
+        android:text="Lista de Semanas"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBlack">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="101dp"
+                android:src="@drawable/logo_getfit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_gravity="center"
+                android:shadowColor="@color/colorAccent"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="20"
+                android:text="GetFit"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivLogo2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="7dp"
+                android:clickable="true"
+                android:src="@drawable/ic_ajustes" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txtDieta"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+
+        android:layout_alignStart="@+id/txtDietas"
+        android:layout_alignTop="@+id/txtRutina"
+        android:background="@drawable/dieta2"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        android:textColor="#e8eaee"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtRutina"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtSeguimiento"
+        android:layout_marginBottom="109dp"
+        android:background="@drawable/back"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        android:textColor="#e8eaee"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtSeguimiento"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="158dp"
+        android:background="@drawable/dorsales1"
+        android:gravity="bottom"
+        android:text="Seguimiento rutinas"
+        android:textAlignment="center"
+        android:textColor="#e8eaee"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDietas"
+        android:layout_width="152dp"
+        android:layout_height="152dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/txtSeguimiento"
+        android:layout_marginEnd="21dp"
+
+        android:background="@drawable/dieta3"
+        android:gravity="bottom"
+        android:text="Seguimiento dietas"
+        android:textAlignment="center"
+        android:textColor="#e8eaee"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtProgreso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp"
+        android:text="¡Bienvenido"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="291dp"
+        android:gravity="center"
+        android:text="Mi actividad"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

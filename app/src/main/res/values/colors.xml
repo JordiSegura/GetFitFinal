@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorNavBar">#000000</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#BA007D</color>
+    <color name="colorBg">#ffffff</color>
+    <color name="colorbgGrid">#bfbfbf</color>
+
+    <color name="colorBlack">#000000</color>
+</resources>

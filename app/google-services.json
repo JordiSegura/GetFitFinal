@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1025990870165",
+    "firebase_url": "https://getfit-61e66.firebaseio.com",
+    "project_id": "getfit-61e66",
+    "storage_bucket": "getfit-61e66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025990870165:android:c1b722566d89024a",
+        "android_client_info": {
+          "package_name": "vidal.sergi.getfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025990870165-casulqebhgu13cpo13oike2bhiel6fra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "vidal.sergi.getfit",
+            "certificate_hash": "4f5b78fd1a5cb8cabc45f8958ccae4f4e4b9b315"
+          }
+        },
+        {
+          "client_id": "1025990870165-au8ft6q4cpsfj8495h8708j9klhq52kq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1025990870165-au8ft6q4cpsfj8495h8708j9klhq52kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTEkgmbZdLN9bxeXQBXPYo6RPQC5_6fvA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025990870165-au8ft6q4cpsfj8495h8708j9klhq52kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

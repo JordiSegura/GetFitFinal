@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBg">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Editar Perfil"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/cardViewSave"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="185dp"
+        android:text="Nombre:"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/tvApellidos"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvNombre"
+        android:layout_below="@+id/tvNombre"
+        android:layout_marginTop="25dp"
+        android:text="Apellidos:"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/tvEdad"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvApellidos"
+        android:layout_below="@+id/tvApellidos"
+        android:layout_marginTop="25dp"
+        android:text="Edad:"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/tvSexo"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvEdad"
+        android:layout_below="@+id/tvEdad"
+        android:layout_marginTop="25dp"
+        android:text="Sexo"
+        android:textColor="@color/colorBlack" />
+
+    <TextView
+        android:id="@+id/tvPeso"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvSexo"
+        android:layout_below="@+id/tvSexo"
+        android:layout_marginTop="25dp"
+        android:text="Peso:"
+        android:textColor="@color/colorBlack" />
+
+
+    <TextView
+        android:id="@+id/tvAltura"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvPeso"
+        android:layout_below="@+id/edPeso"
+        android:layout_marginTop="20dp"
+        android:text="Altura:"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:id="@+id/edNombre"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tvNombre"
+        android:layout_alignEnd="@+id/cardViewSave"
+        android:hint="Nombre"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edApellidos"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tvApellidos"
+        android:layout_alignStart="@+id/edNombre"
+        android:hint="Apellidos"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edEdad"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tvEdad"
+        android:layout_alignStart="@+id/edNombre"
+        android:hint="Edad"
+        android:inputType="number"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tvSexo"
+        android:layout_alignBottom="@+id/tvSexo"
+        android:layout_alignStart="@+id/edEdad"
+        android:entries="@array/gender_array"
+        android:prompt="@string/gender" />
+
+    <EditText
+        android:id="@+id/edPeso"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tvPeso"
+        android:layout_alignBottom="@+id/tvPeso"
+        android:layout_alignStart="@+id/spinner1"
+        android:hint="Peso"
+        android:inputType="number"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edAltura"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/tvAltura"
+        android:layout_alignBottom="@+id/tvAltura"
+        android:layout_alignStart="@+id/edPeso"
+        android:hint="Altura"
+        android:inputType="number"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewSave"
+        android:layout_width="344dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="20"
+                android:text="Guardar"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewIMC"
+        android:layout_width="343dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/edAltura"
+        android:layout_alignStart="@+id/tvAltura"
+        android:layout_below="@+id/edAltura"
+        android:layout_marginStart="-9dp"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/btnIMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="20"
+                android:text="Calcular IMC"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <View
+        android:layout_width="360dp"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@color/colorAccent" />
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBlack">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="101dp"
+                android:src="@drawable/logo_getfit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_gravity="center"
+                android:shadowColor="@color/colorAccent"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="20"
+                android:text="GetFit"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="7dp"
+                android:clickable="true"
+                android:src="@drawable/ic_ajustes" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorNavBar"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemTextColor="@drawable/nav_item_color_state"
+        app:menu="@menu/bottom_navigation_main"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="513dp"
+        android:textColor="#FFFFFF"
+        />
+
+</RelativeLayout>

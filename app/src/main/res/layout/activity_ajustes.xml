@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    >
+
+    <TextView
+        android:id="@+id/ajustes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Ajustes"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="200dp"
+        android:text="Cuenta"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/editarPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cuenta"
+        android:layout_below="@+id/cuenta"
+        android:layout_marginTop="25dp"
+        android:text="Editar Perfil"
+        android:textColor="@color/colorBlack"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/informacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editarPerfil"
+        android:layout_below="@+id/editarPerfil"
+        android:layout_marginTop="30dp"
+        android:text="Información"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/politica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/informacion"
+        android:layout_below="@+id/informacion"
+        android:layout_marginTop="25dp"
+        android:text="Política de privacidad"
+        android:textColor="@color/colorBlack"
+        />
+
+    <TextView
+        android:id="@+id/anuncios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/politica"
+        android:layout_below="@+id/politica"
+        android:layout_marginTop="25dp"
+        android:text="Anuncios"
+        android:textColor="@color/colorBlack"
+        />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/anuncios"
+        android:layout_below="@+id/anuncios"
+        android:layout_marginTop="25dp"
+        android:text="Versión"
+        android:textColor="@color/colorBlack"
+        />
+
+    <TextView
+        android:id="@+id/ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/version"
+        android:layout_below="@+id/version"
+        android:layout_marginTop="25dp"
+        android:text="Ayuda"
+        android:textColor="@color/colorBlack"
+        />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorNavBar"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemTextColor="@drawable/nav_item_color_state"
+        app:menu="@menu/bottom_navigation_main"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="513dp"
+        android:textColor="#FFFFFF"
+        />
+    <View
+        android:layout_width="360dp"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@color/colorAccent" />
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBlack">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="101dp"
+                android:src="@drawable/logo_getfit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_gravity="center"
+                android:shadowColor="@color/colorAccent"
+                android:shadowDx="10"
+                android:shadowDy="10"
+                android:shadowRadius="20"
+                android:text="GetFit"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="7dp"
+                android:clickable="true"
+                android:src="@drawable/ic_ajustes" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="vidal.sergi.getfit">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistroActivity" />
+        <activity android:name=".HomeActivity"
+            />
+        <activity android:name=".RutinasActivity" />
+        <activity android:name=".DietasActivity"
+            />
+        <activity android:name=".AjustesActivity" />
+        <activity android:name=".EditarPerfilActivity" />
+        <activity android:name=".DetalleRutinaActivity" />
+        <activity android:name=".DetalleDietaActivity" />
+        <activity android:name=".EjerciciosActivity" />
+        <activity android:name=".AlimentosActivity" />
+        <activity android:name=".DiasActivity"/>
+        <activity android:name=".LunesActivity"/>
+        <activity android:name=".DetalleEjerciciosActivity" />
+        <activity android:name=".DetalleAlimentosActivity" />
+        <activity android:name=".SeguimientoRutinasActivity"/>
+        <activity android:name=".SeguimientoDietasActivity"/>
+        <activity android:name=".LunesActivity2"/>
+
+
+    </application>
+
+</manifest>
